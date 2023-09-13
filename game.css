@@ -1,0 +1,398 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+:root{
+    --green: #76d594;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/212323/pexels-photo-212323.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    display: grid;
+    place-items: center;
+}
+.game-class{
+    margin-top: 20px;
+    display: flex;
+    place-items: center;
+    gap: 14px;
+}
+.inactive{
+    display: none;
+}
+.game-container{
+    box-shadow: 16px 1px 52px #3b6749;
+    background-color: white;
+    width: 485px;
+    height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+.mesages-container{
+    background-color: white;
+    width: 30vw;
+    height: 620px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.canva{
+    border: 1px solid var(--green);
+        margin-bottom: 40px;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    gap: 30px;
+}
+.btns button{
+    border-radius: 50px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    border-style: none;
+    padding: 30px;
+    transition: 1s ease;
+}
+.btns button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow:  20px 20px 60px #76d594,
+                -20px -20px 60px #76d594;
+    animation-delay: 1s;
+    
+}
+
+.messages{
+    padding: 10px;
+}
+.messages p{
+    color: var(--green);
+}
+/*CHAT*/
+#comments-container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    gap: 5px;
+  }
+  .comment-container {
+    border: solid 1px #91a8c2;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: var(--green);
+  } 
+  .responses-container {
+    margin-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .responses-container .comment-container {
+    background-color: #cde0d3;
+    border: 3px solid white;
+    color: white;
+  }
+  .input {
+    padding: 5px 15px;
+    border: solid 1px var(--green);
+    margin: 5px 0;
+  }
+  
+  button {
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #1c6fc2;
+    color: white;
+  }
+.comment-win{
+    background-color: var(--green);
+    height: 240px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+.comment-win p{
+    font-size: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    text-align: center;
+}
+.comment-win .imagen{
+    width: 140px;
+    height: 140px;
+    margin-left: 20%;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+.comment-lose{
+    
+    background-color: var(--green);
+    height: 240px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+
+}
+.comment-lose p{
+    font-size: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    color: white;
+    text-align: center;
+}
+.comment-lose .imagen{
+    width: 140px;
+    height: 140px;
+    margin-left: 20%;
+    -webkit-animation: wobble-hor-bottom 0.8s 3 both;
+	        animation: wobble-hor-bottom 0.8s 3 both;
+}
+.commet-juego-terminado{
+        z-index: 1;
+        box-shadow: 16px 1px 52px #3b6749;
+        background-color: #76d594;
+        width: 485px;
+        height: 600px;
+        border-radius: 15px;
+        padding: 20px;
+        position: absolute;
+        border: 5px solid white;   
+}
+.commet-juego-terminado p{
+        font-size: 30px;
+        color: white;
+        font-family: 'Alfa Slab One', cursive;
+        text-align: center;
+        
+}
+.commet-juego-terminado img{
+        width: 300px;
+        object-fit: cover;
+        margin-left: 20%;
+}
+.commet-juego-terminado button{
+        color: var(--green);
+        background-color: white;
+        border: #62ad7a;
+        padding: 25px 120px;
+        font-size: 20px;
+        margin-left: 8%;
+        font-family: 'Alfa Slab One', cursive;
+        
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-9-12 21:2:34
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  @keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    15% {
+      -webkit-transform: translateX(-30px) rotate(-6deg);
+              transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      -webkit-transform: translateX(15px) rotate(6deg);
+              transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      -webkit-transform: translateX(-15px) rotate(-3.6deg);
+              transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      -webkit-transform: translateX(9px) rotate(2.4deg);
+              transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      -webkit-transform: translateX(-6px) rotate(-1.2deg);
+              transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+  
+@media (max-width:700px){
+        .game-class{
+                display: flex;
+                flex-direction: column;
+        }
+        .mesages-container{
+                width: 340px;
+                height: 200px;
+            }
+}
+@media (max-width: 400px) {
+    .game-class{
+        display: flex;
+        flex-direction: column;
+    }
+    .mesages-container{
+        width: 340px;
+        height: 200px;
+    }
+    .btns{
+        gap: 14px;
+    }
+    .game-container{
+        width: 340px;
+        height: 400px;
+    }
+    .btns button{
+        background-color: transparent;
+        padding: 16px;
+        border: 1px solid var(--green);
+    }
+    .commet-juego-terminado{
+        top: 30px;
+        width: 99vw;
+        height: 390px;
+    }
+    .commet-juego-terminado button{
+        margin-left: 25%;
+        padding: 10px 15px;
+    }
+    .commet-juego-terminado img{
+        margin: 0;
+        width: 200px;
+        height: 200px;
+        margin-left: 20%;
+    }
+    .comment-lose{
+        margin-top: 0px;
+        position: absolute;
+        width: 320px;
+        height: 200px;
+        margin-bottom: 100px;
+    }
+    .comment-win{
+        margin-top: 0px;
+        position: absolute;
+        width: 320px;
+        height: 200px;
+        margin-bottom: 100px;
+    }
+}

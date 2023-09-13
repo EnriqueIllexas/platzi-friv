@@ -1,2 +1,1 @@
-# platzi-friv
-Juego online friv
+# curso-videojuego
